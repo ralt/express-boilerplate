@@ -107,7 +107,7 @@ The views are using the [EJS template][1] system. This means that there must be 
 
 Each template can then be called using its file name. In the controller's example, it calls the `home.ejs` file.
 
-Basically, there are three special syntax we can use (replace &lt; and &gt; by the correct HTML entity):
+Basically, there are three special syntax we can use:
 
 - `<% if () { %>`: real javascript code. Available for `if`, `forEach`, etc.
 - `<%= variable %>`: displays a javascript variable.
