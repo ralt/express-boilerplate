@@ -1,4 +1,8 @@
-module.exports = function() {
-    app.get( '/', app.controllers.homeController );
-}();
+var routil = require("routil")
 
+module.exports = function (req, res) {
+    routil.template(req, res, 'home.mustache', {
+        text: 'foo'
+        , title: 'bar'
+    })
+}
